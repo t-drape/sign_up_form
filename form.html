@@ -1,3 +1,14 @@
+<!--
+Author: TJ Drape
+Purpose: Create a sign-in form
+Date: January 26, 2025
+
+Sources of Help:
+Password Regex: https://uibakery.io/regex-library/password
+Background Image: 
+  -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +25,7 @@
       <p class="logo_text">ODIN</p>
     </div>
 
-    <p class="footer">Photo by Hello on Unsplash</p>
+    <p class="footer"><a>Photo by <a href="https://unsplash.com/@augustinewong?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Augustine Wong</a> on <a href="https://unsplash.com/photos/green-trees-on-forest-during-daytime-pdjFlhFqznc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
   </div>
   <div class="right">
     <div class="top">
@@ -37,17 +48,20 @@
           <input id="email" type="email">
 
           <label for="password">PASSWORD</label>
-          <input id="password" type="password" required>
+          <input id="password" type="password" pattern="[A-Z]{8}"
+          required>
         </div>
         <div class="input_row">
           <label for="last_name">LAST NAME</label>
           <input id="last_name" type="text">
 
           <label for="tel_num">PHONE NUMBER</label>
-          <input id="tel_num" type="tel">
+          <input id="tel_num" type="tel" pattern="[0-9]{10}">
 
           <label for="confirm_password">CONFIRM PASSWORD</label>
-          <input id="confirm_password" type="password" required>
+          <input id="confirm_password" type="password"
+          pattern="[A-Z]{8}"
+          required>
         </div>
       </form>
     </div>
